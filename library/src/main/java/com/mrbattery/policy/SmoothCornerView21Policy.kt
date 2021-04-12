@@ -9,16 +9,10 @@ import android.view.View
 import android.view.ViewOutlineProvider
 
 /**
- * 通用圆角布局L版本以上策略
- * @author minminaya
- * @email minminaya@gmail.com
- * @time Created by 2019/6/8 0:27
- *
+ * 平滑圆角布局L版本以上策略
  */
-class SmoothRoundView21Policy(
-    view: View, context: Context, attributeSet: AttributeSet?,
-    attrs: IntArray,
-    attrIndex: Int
+class SmoothCornerView21Policy(
+    view: View, context: Context, attributeSet: AttributeSet?, attrs: IntArray, attrIndex: Int
 ) : AbsRoundViewPolicy(view, context, attributeSet, attrs, attrIndex) {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)

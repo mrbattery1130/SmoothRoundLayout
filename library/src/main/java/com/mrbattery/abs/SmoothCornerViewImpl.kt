@@ -7,10 +7,14 @@ import android.util.AttributeSet
 import android.view.View
 import com.mrbattery.policy.GeneralRoundView18Policy
 import com.mrbattery.policy.IRoundViewPolicy
-import com.mrbattery.policy.SmoothRoundView21Policy
+import com.mrbattery.policy.SmoothCornerView21Policy
 
-class SmoothRoundViewImpl (view: View, context: Context, attributeSet: AttributeSet?, attrs: IntArray, attrIndex: Int) :
-    IRoundView {
+/**
+ * 平滑圆角布局实现类
+ */
+class SmoothCornerViewImpl(
+    view: View, context: Context, attributeSet: AttributeSet?, attrs: IntArray, attrIndex: Int
+) : IRoundView {
 
     private lateinit var smoothRoundViewPolicy: IRoundViewPolicy
 
@@ -30,13 +34,21 @@ class SmoothRoundViewImpl (view: View, context: Context, attributeSet: Attribute
         smoothRoundViewPolicy.afterDispatchDraw(canvas)
     }
 
-    private fun init(view: View, context: Context, attributeSet: AttributeSet?, attrs: IntArray, attrIndex: Int) {
+    private fun init(
+        view: View,
+        context: Context,
+        attributeSet: AttributeSet?,
+        attrs: IntArray,
+        attrIndex: Int
+    ) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             //L版本以上
-            smoothRoundViewPolicy = SmoothRoundView21Policy(view, context, attributeSet, attrs, attrIndex)
+            smoothRoundViewPolicy =
+                SmoothCornerView21Policy(view, context, attributeSet, attrs, attrIndex)
         } else {
-            smoothRoundViewPolicy = GeneralRoundView18Policy(view, context, attributeSet, attrs, attrIndex)
+            smoothRoundViewPolicy =
+                GeneralRoundView18Policy(view, context, attributeSet, attrs, attrIndex)
         }
     }
 
