@@ -1,4 +1,4 @@
-package com.minminaya.policy
+package com.mrbattery.policy
 
 import android.graphics.Canvas
 

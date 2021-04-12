@@ -1,13 +1,13 @@
-package com.minminaya.abs
+package com.mrbattery.abs
 
 import android.content.Context
 import android.graphics.Canvas
 import android.os.Build
 import android.util.AttributeSet
 import android.view.View
-import com.minminaya.policy.GeneralRoundView18Policy
-import com.minminaya.policy.IRoundViewPolicy
-import com.minminaya.policy.SmoothRoundView21Policy
+import com.mrbattery.policy.GeneralRoundView18Policy
+import com.mrbattery.policy.IRoundViewPolicy
+import com.mrbattery.policy.SmoothRoundView21Policy
 
 class SmoothRoundViewImpl (view: View, context: Context, attributeSet: AttributeSet?, attrs: IntArray, attrIndex: Int) :
     IRoundView {

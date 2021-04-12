@@ -1,4 +1,4 @@
-package com.minminaya.abs
+package com.mrbattery.abs
 
 /**
  * 通用圆角布局抽象接口

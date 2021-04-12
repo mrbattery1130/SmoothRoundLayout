@@ -1,4 +1,4 @@
-package com.minminaya.widget
+package com.mrbattery.widget
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -6,19 +6,19 @@ import android.graphics.Canvas
 import android.os.Build
 import android.util.AttributeSet
 import android.view.View
-import android.widget.LinearLayout
-import com.minminaya.R
-import com.minminaya.abs.GeneralRoundViewImpl
-import com.minminaya.abs.IRoundView
+import android.widget.FrameLayout
+import com.mrbattery.R
+import com.mrbattery.abs.GeneralRoundViewImpl
+import com.mrbattery.abs.IRoundView
 
 /**
- * GeneralRoundLinearLayout
+ * GeneralRoundFrameLayout
  * @author minminaya
  * @email minminaya@gmail.com
  * @time Created by 2019/6/8 0:30
  *
  */
-class GeneralRoundLinearLayout : LinearLayout, IRoundView {
+class GeneralRoundFrameLayout : FrameLayout, IRoundView {
     private lateinit var generalRoundViewImpl: GeneralRoundViewImpl
 
     constructor(context: Context) : this(context, null)
@@ -57,8 +57,8 @@ class GeneralRoundLinearLayout : LinearLayout, IRoundView {
             view,
             context,
             attributeSet,
-            R.styleable.GeneralRoundLinearLayout,
-            R.styleable.GeneralRoundLinearLayout_corner_radius
+            R.styleable.GeneralRoundFrameLayout,
+            R.styleable.GeneralRoundFrameLayout_corner_radius
         )
     }
 

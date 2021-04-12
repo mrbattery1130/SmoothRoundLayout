@@ -1,4 +1,4 @@
-package com.minminaya
+package com.mrbattery
 
 import android.content.Context
 

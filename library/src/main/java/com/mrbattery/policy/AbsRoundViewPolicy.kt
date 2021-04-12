@@ -1,9 +1,9 @@
-package com.minminaya.policy
+package com.mrbattery.policy
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
-import com.minminaya.dip2px
+import com.mrbattery.dip2px
 
 /**
  * 圆角策略抽象类

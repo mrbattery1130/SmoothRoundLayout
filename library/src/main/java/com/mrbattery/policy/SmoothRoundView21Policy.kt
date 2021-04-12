@@ -1,4 +1,4 @@
-package com.minminaya.policy
+package com.mrbattery.policy
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -15,7 +15,7 @@ import android.view.ViewOutlineProvider
  * @time Created by 2019/6/8 0:27
  *
  */
-class GeneralRoundView21Policy(
+class SmoothRoundView21Policy(
     view: View, context: Context, attributeSet: AttributeSet?,
     attrs: IntArray,
     attrIndex: Int

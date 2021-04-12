@@ -1,26 +1,22 @@
-package com.minminaya.widget
+package com.mrbattery.widget
 
-import android.annotation.TargetApi
 import android.content.Context
 import android.graphics.Canvas
-import android.os.Build
-import android.os.Parcel
-import android.os.Parcelable
+import android.support.constraint.ConstraintLayout
 import android.util.AttributeSet
 import android.view.View
-import android.widget.FrameLayout
-import com.minminaya.R
-import com.minminaya.abs.GeneralRoundViewImpl
-import com.minminaya.abs.IRoundView
+import com.mrbattery.R
+import com.mrbattery.abs.GeneralRoundViewImpl
+import com.mrbattery.abs.IRoundView
 
 /**
- * GeneralRoundFrameLayout
+ * GeneralRoundConstraintLayout
  * @author minminaya
  * @email minminaya@gmail.com
- * @time Created by 2019/6/8 0:30
+ * @time Created by 2019/6/8 0:36
  *
  */
-class GeneralRoundFrameLayout : FrameLayout, IRoundView {
+class GeneralRoundConstraintLayout : ConstraintLayout, IRoundView {
     private lateinit var generalRoundViewImpl: GeneralRoundViewImpl
 
     constructor(context: Context) : this(context, null)
@@ -30,16 +26,6 @@ class GeneralRoundFrameLayout : FrameLayout, IRoundView {
     }
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        init(this, context, attrs)
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(
-        context,
-        attrs,
-        defStyleAttr,
-        defStyleRes
-    ) {
         init(this, context, attrs)
     }
 
@@ -59,8 +45,8 @@ class GeneralRoundFrameLayout : FrameLayout, IRoundView {
             view,
             context,
             attributeSet,
-            R.styleable.GeneralRoundFrameLayout,
-            R.styleable.GeneralRoundFrameLayout_corner_radius
+            R.styleable.GeneralRoundConstraintLayout,
+            R.styleable.GeneralRoundRelativeLayout_corner_radius
         )
     }
 
