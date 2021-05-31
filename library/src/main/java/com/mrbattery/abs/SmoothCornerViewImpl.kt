@@ -7,6 +7,7 @@ import android.util.AttributeSet
 import android.view.View
 import com.mrbattery.policy.GeneralRoundView18Policy
 import com.mrbattery.policy.IRoundViewPolicy
+import com.mrbattery.policy.SmoothCornerView18Policy
 import com.mrbattery.policy.SmoothCornerView21Policy
 
 /**
@@ -42,13 +43,11 @@ class SmoothCornerViewImpl(
         attrIndex: Int
     ) {
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        smoothRoundViewPolicy = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             //L版本以上
-            smoothRoundViewPolicy =
-                SmoothCornerView21Policy(view, context, attributeSet, attrs, attrIndex)
+            SmoothCornerView21Policy(view, context, attributeSet, attrs, attrIndex)
         } else {
-            smoothRoundViewPolicy =
-                GeneralRoundView18Policy(view, context, attributeSet, attrs, attrIndex)
+            SmoothCornerView18Policy(view, context, attributeSet, attrs, attrIndex)
         }
     }
 

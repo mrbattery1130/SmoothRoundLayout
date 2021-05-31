@@ -1,8 +1,7 @@
-package com.mrbattery.example
+package com.mrbattery.smoothcornerlayout.example
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mrbattery.genaral.R
 
 class MainActivity : AppCompatActivity() {
 

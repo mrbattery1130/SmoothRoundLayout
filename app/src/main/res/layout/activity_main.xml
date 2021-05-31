@@ -35,7 +35,7 @@
                 android:background="@color/colorAccent" />
         </com.mrbattery.widget.GeneralRoundRelativeLayout>
 
-        <com.mrbattery.example.custom.GeneralRoundImageView
+        <com.mrbattery.smoothcornerlayout.example.custom.SmoothCornerImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
